@@ -6,3 +6,123 @@
 body {
     font-family: "Red Hat Display", sans-serif;
 }
+section {
+    height: 100vh;
+    width: 100%;   
+    display: flex;
+    background-color: rgb(224, 232, 255);
+}
+.container {
+    max-width: 327px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(122, 146, 208, 0.194);
+}
+h2 {
+    color: rgb(31, 47, 86);
+    font-weight: 900;
+    line-height: 1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+.image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.image img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.content p:nth-child(2) {
+    color: rgb(114, 128, 167);
+    font-weight: 500;
+    padding: 0 1rem;
+    line-height: 1.55;
+}
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+}
+.left-plan {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: start;
+}
+.plan a{
+    color: rgb(56, 41, 224);
+    font-weight: 700;
+    text-decoration-thickness: 1.3px;
+    font-size: .8em;
+    cursor: pointer;
+}
+.plan a:hover{
+    color: rgb(114, 128, 167);
+}
+.price p {
+    font-weight: 900;
+    color: rgb(31, 47, 86);
+}
+.price span {
+    font-weight: 500;
+    color: rgb(114, 128, 167);
+}
+.btn1 {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(56, 41, 224);
+    padding: 1em;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(15, 34, 82, 0.194);
+    width: 100%;
+    cursor: pointer;
+}
+.btn1:hover {
+    background-color: rgb(114, 128, 167);
+}
+.btn2 {
+    display: block;
+    text-decoration: none;
+    color: rgb(114, 128, 167);
+    font-weight: 900;
+    cursor: pointer;
+}
+.btn2:hover {
+    color: rgb(31, 47, 86);
+}
+
+@media screen and (min-width:420px){
+    section {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .container{
+        max-width: 439px;
+    }
+    .content {
+        padding: 3rem 3.5rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    .left-plan {
+        gap: 1.2rem;
+    }
+}
